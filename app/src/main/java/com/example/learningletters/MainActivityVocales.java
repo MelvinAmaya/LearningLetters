@@ -12,11 +12,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivityVocales extends AppCompatActivity {
-    public ImageButton vocala;
-    public ImageButton vocale;
-    public ImageButton vocali;
-    public ImageButton vocalo;
-    public ImageButton vocalu;
+    public ImageView vocala;
+    public ImageView vocale;
+    public ImageView vocali;
+    public ImageView vocalo;
+    public ImageView vocalu;
     public ImageView atra;
     public TextView titulo2;
     MediaPlayer audio;
@@ -25,62 +25,115 @@ public class MainActivityVocales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_vocales);
-        vocala = (ImageButton) findViewById(R.id.btnletraa);
-        vocale = (ImageButton) findViewById(R.id.btnletrae);
-        vocali = (ImageButton) findViewById(R.id.btnletrai);
-        vocalo = (ImageButton) findViewById(R.id.btnletrao);
-        vocalu = (ImageButton) findViewById(R.id.btnletrau);
+        vocala = (ImageView) findViewById(R.id.btnletraa);
+        vocale = (ImageView) findViewById(R.id.btnletrae);
+        vocali = (ImageView) findViewById(R.id.btnletrai);
+        vocalo = (ImageView) findViewById(R.id.btnletrao);
+        vocalu = (ImageView) findViewById(R.id.btnletrau);
         atra = (ImageView) findViewById(R.id.btnatras);
         titulo2 = (TextView) findViewById(R.id.toolbar_title);
+        audio = null;
 
 
        vocala.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-              // audio = MediaPlayer.create(MainActivityVocales.this,R.raw.letra_a);
-               audio =MediaPlayer.create(getApplicationContext(),R.raw.a);
-               Toast.makeText(getApplicationContext(),"Hola panas",Toast.LENGTH_LONG).show();
-               audio.start();
+               if(audio ==null)
+               {
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.a);
+                   audio.start();
+               }
+               else
+               {
+                   audio.pause();
+                   audio.release();
+                   audio=null;
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.a);
+                   audio.start();
+               }
+
            }
        });
 
        vocale.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               audio = MediaPlayer.create(getApplicationContext(),R.raw.e);
-               audio.start();
+               if(audio ==null)
+               {
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.e);
+                   audio.start();
+               }
+               else
+               {
+                   audio.pause();
+                   audio.release();
+                   audio=null;
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.e);
+                   audio.start();
+               }
            }
        });
 
        vocali.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               audio = MediaPlayer.create(getApplicationContext(),R.raw.i);
-               audio.start();
+               if(audio ==null)
+               {
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.i);
+                   audio.start();
+               }
+               else
+               {
+                   audio.pause();
+                   audio.release();
+                   audio=null;
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.i);
+                   audio.start();
+               }
            }
        });
 
        vocalo.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               audio = MediaPlayer.create(getApplicationContext(),R.raw.o);
-               audio.start();
+               if(audio ==null)
+               {
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.o);
+                   audio.start();
+               }
+               else
+               {
+                   audio.pause();
+                   audio.release();
+                   audio=null;
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.o);
+                   audio.start();
+               }
            }
        });
 
        vocalu.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               audio = MediaPlayer.create(getApplicationContext(),R.raw.u);
-               audio.start();
+               if(audio ==null)
+               {
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.u);
+                   audio.start();
+               }
+               else
+               {
+                   audio.pause();
+                   audio.release();
+                   audio=null;
+                   audio =MediaPlayer.create(getApplicationContext(),R.raw.u);
+                   audio.start();
+               }
            }
        });
 
        atra.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent i = new Intent(MainActivityVocales.this,MainActivity.class);
-               startActivity(i);
                finish();
            }
        });

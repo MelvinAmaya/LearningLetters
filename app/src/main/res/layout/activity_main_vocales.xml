@@ -5,10 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityVocales">
+    tools:context=".MainActivityVocales"
+    android:background="@drawable/fondo">
     <include layout="@layout/toolbar"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnletrae"
         android:layout_width="176dp"
         android:layout_height="118dp"
@@ -17,70 +18,70 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479"
+        app:layout_constraintVertical_bias="0.44"
         app:srcCompat="@drawable/e" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnletraa"
-        android:layout_width="187dp"
-        android:layout_height="117dp"
+        android:layout_width="176dp"
+        android:layout_height="118dp"
         android:adjustViewBounds="true"
         android:contentDescription="@android:string/yes"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482"
+        app:layout_constraintVertical_bias="0.44"
         app:srcCompat="@drawable/letraa" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnletrai"
-        android:layout_width="192dp"
-        android:layout_height="119dp"
+        android:layout_width="176dp"
+        android:layout_height="118dp"
         android:adjustViewBounds="true"
         android:contentDescription="@android:string/yes"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694"
+        app:layout_constraintVertical_bias="0.66"
         app:srcCompat="@drawable/i" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnletrao"
-        android:layout_width="177dp"
-        android:layout_height="115dp"
+        android:layout_width="176dp"
+        android:layout_height="118dp"
         android:adjustViewBounds="true"
         android:contentDescription="@android:string/yes"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693"
+        app:layout_constraintVertical_bias="0.66"
         app:srcCompat="@drawable/o" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnletrau"
-        android:layout_width="204dp"
-        android:layout_height="108dp"
+        android:layout_width="176dp"
+        android:layout_height="118dp"
         android:adjustViewBounds="true"
         android:contentDescription="@android:string/yes"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.895"
+        app:layout_constraintVertical_bias="0.884"
         app:srcCompat="@drawable/u" />
 
     <ImageView
