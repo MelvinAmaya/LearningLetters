@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/LearningLetters/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/LearningLetters/app/src/main/res/layout/activity_main_alfabeto.xml" value="0.536" />
+        <entry key="..\:/LearningLetters/app/src/main/res/layout/activity_main_alfabeto.xml" value="0.4809688581314879" />
         <entry key="..\:/LearningLetters/app/src/main/res/layout/activity_main_vocales.xml" value="0.4" />
         <entry key="..\:/LearningLetters/app/src/main/res/layout/toolbar.xml" value="0.4" />
+        <entry key="..\:/LearningLetters/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1915" />
+        <entry key="..\:/LearningLetters/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1915" />
       </map>
     </option>
   </component>
