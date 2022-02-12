@@ -41,7 +41,7 @@ public class MainActivityAlfabeto extends AppCompatActivity {
     public ImageView atras;
     public TextView titulo3;
 
-    MediaPlayer abecedario = null;
+    MediaPlayer abecedario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,33 +76,62 @@ public class MainActivityAlfabeto extends AppCompatActivity {
         letra_z = (ImageView) findViewById(R.id.btnletr_z);
         atras = (ImageView) findViewById(R.id.btnatras);
         titulo3 = (TextView) findViewById(R.id.toolbar_title);
+        abecedario=null;
 
         letra_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.a);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.a);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.a);
+                    abecedario.start();
+                }
             }
         });
 
         letra_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.b);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.b);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.b);
+                    abecedario.start();
+                }
             }
         });
 
         letra_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.c);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.c);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.c);
+                    abecedario.start();
+                }
 
             }
 
@@ -111,200 +140,462 @@ public class MainActivityAlfabeto extends AppCompatActivity {
         letra_d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.d);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.d);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.d);
+                    abecedario.start();
+                }
             }
         });
 
         letra_e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.e);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.e);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.e);
+                    abecedario.start();
+                }
             }
         });
 
         letra_f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.f);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.f);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.f);
+                    abecedario.start();
+                }
             }
         });
 
         letra_g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.g);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.g);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.g);
+                    abecedario.start();
+                }
             }
         });
 
         letra_h.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.h);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.h);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.h);
+                    abecedario.start();
+                }
             }
         });
 
         letra_i.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.i);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.i);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.i);
+                    abecedario.start();
+                }
             }
         });
 
         letra_j.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.j);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.j);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.j);
+                    abecedario.start();
+                }
             }
         });
 
         letra_k.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.k);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.k);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.k);
+                    abecedario.start();
+                }
             }
         });
 
         letra_l.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.l);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.l);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.l);
+                    abecedario.start();
+                }
             }
         });
 
         letra_m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.m);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.m);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.m);
+                    abecedario.start();
+                }
             }
         });
 
         letra_n.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.n);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.n);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.n);
+                    abecedario.start();
+                }
             }
         });
 
         letra_enie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.enie);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.enie);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.enie);
+                    abecedario.start();
+                }
             }
         });
 
         letra_o.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.o);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.o);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.o);
+                    abecedario.start();
+                }
             }
         });
 
         letra_p.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.p);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.p);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.p);
+                    abecedario.start();
+                }
             }
         });
 
         letra_q.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.q);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.q);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.q);
+                    abecedario.start();
+                }
             }
         });
 
         letra_r.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.r);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.r);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.r);
+                    abecedario.start();
+                }
             }
         });
 
         letra_s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.s);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.s);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.s);
+                    abecedario.start();
+                }
             }
         });
 
         letra_t.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.t);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.t);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.t);
+                    abecedario.start();
+                }
             }
         });
 
         letra_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.u);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.u);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.u);
+                    abecedario.start();
+                }
             }
         });
 
         letra_v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.v);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.v);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.v);
+                    abecedario.start();
+                }
             }
         });
 
         letra_w.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.w);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.w);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.w);
+                    abecedario.start();
+                }
             }
         });
 
         letra_x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.x);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.x);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.x);
+                    abecedario.start();
+                }
             }
         });
 
         letra_y.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.y);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.y);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.y);
+                    abecedario.start();
+                }
             }
         });
 
         letra_z.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abecedario = MediaPlayer.create(getApplicationContext(),R.raw.z);
-                abecedario.start();
+                if(abecedario ==null)
+                {
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.z);
+                    abecedario.start();
+                }
+                else
+                {
+                    abecedario.pause();
+                    abecedario.release();
+                    abecedario=null;
+                    abecedario =MediaPlayer.create(getApplicationContext(),R.raw.z);
+                    abecedario.start();
+                }
             }
         });
 
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivityAlfabeto.this,MainActivity.class);
-                startActivity(i);
                 finish();
             }
         });
