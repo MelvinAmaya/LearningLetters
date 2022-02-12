@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
     <include layout="@layout/toolbar"/>
 
     <ImageView
@@ -20,18 +21,6 @@
         app:srcCompat="@drawable/titulo" />
 
     <Button
-        android:id="@+id/btnActivityVocal"
-        android:layout_width="355dp"
-        android:layout_height="53dp"
-        android:text="Vocales"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
-
-    <Button
         android:id="@+id/btnActivityAbecedario"
         android:layout_width="354dp"
         android:layout_height="56dp"
@@ -41,5 +30,28 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
+        app:layout_constraintVertical_bias="0.767" />
+
+    <Button
+        android:id="@+id/btnActivityVocal"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:text="Vocales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="365dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299"
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
