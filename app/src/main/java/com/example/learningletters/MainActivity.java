@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
 
-        new CountDownTimer(10000,1000){
+        new CountDownTimer(5000,1000){
 
             @Override
             public void onTick(long millisUntilFinished) {
